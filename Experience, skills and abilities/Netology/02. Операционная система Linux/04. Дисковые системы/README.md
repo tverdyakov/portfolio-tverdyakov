@@ -66,11 +66,11 @@ load average показывает среднее количество проце
 #### *Ответ:*
 
 Подключите к виртуальной машине 2 новых диска. 
-
+![Задание 3.1](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/03.1.png)
 1)На первом диске создайте таблицу разделов MBR, Создайте 4 раздела: первый раздел на 50% диска, остальные любого размера на ваше усмотрение. Хотя бы один из разделов должен быть логическим.
-
+![Задание 3.2](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/03.2.png)
 2)На втором диске создайте таблицу разделов GPT. Создайте 4 раздела: первый раздел на 50% диска, остальные любого размера на ваше усмотрение.
-
+![Задание 3.3](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/03.3.png)
 
 ---
 
@@ -83,6 +83,19 @@ load average показывает среднее количество проце
 *В качестве ответа приложите скриншот вывода команды `mdadm -D /dev/md0`, где md0 - это название вашего рейд массива(может быть любым).*
 
 #### *Ответ:*
+```Bash
+sudo mdadm --zero-superblock --force /dev/sd{b,c}
+sudo wipefs --all --force /dev/sd{b,c}
+sudo mdadm --create --verbose /dev/md123 -l 1 -n 2 /dev/sd{b,c}
+sudo mkfs.ext4 /dev/md123
+mount /dev/md123 /mnt
+```
+Чтобы данный раздел монтировался при загрузке системы, узнаем UUID через blkid и добавляем в `/etc/fstab`:
+
+`UUID="7ddc6b7f-e780-6235-3218-25bff6dffd5c"    /mnt    ext4    defaults    0 0`
+
+![Задание 4.1](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/04.1.png)
+![Задание 4.2](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/04.2.png)
 
 ---
 
@@ -106,36 +119,58 @@ load average показывает среднее количество проце
 
 * Сделайте скриншоты вывода комманд df -h, pvs, lvs, vgs;
 
-
+![Задание 5.1](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.1.png)
 * подключите к ОС 2 новых диска;
-
-
+```Bash
+lsblk
+```
+![Задание 5.2](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.2.png)
 * создайте новую VG, добавьте в него 1 диск;
-
-
+```Bash
+sudo pvcreate /dev/sdb /dev/sdc
+sudo vgcreate vgnew /dev/sdb
+```
+![Задание 5.3](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.3.png)
 * создайте 2 LV, распределите доступное пространство между ними поровну;
-
-
+```Bash
+sudo lvcreate  -l 50%VG -n lvnew vgnew
+sudo lvcreate  -l 50%VG -n lvnew1 vgnew
+```
+![Задание 5.4](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.4.png)
 * создайте на обоих томах файловую систему `xfs`;
-
-
+```Bash
+sudo mkfs.xfs /dev/vgnew/lvnew
+sudo mkfs.xfs /dev/vgnew/lvnew1
+```
+![Задание 5.5](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.5.png)
 * создайте две точки монтирования и смонтируйте каждый из томов;
-
-
+```Bash
+sudo mkdir /mnt/disk1
+sudo mkdir /mnt/disk2
+sudo mount /dev/vgnew/lvnew /mnt/disk1
+sudo mount /dev/vgnew/lvnew /mnt/disk2
+```
+![Задание 5.6](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.6.png)
 * сделайте скриншот вывода комманд df -h;
 
-
+![Задание 5.7](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.7.png)
 * добавьте в VG второй оставшийся диск;
-
-
+```Bash
+sudo vgextend vgnew /dev/sdc
+```
+![Задание 5.8](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.8.png)
 * расширьте первый LV на объем нового диска;
-
-
+```Bash
+sudo lvextend -l +100%FREE /dev/vgnew/lvnew
+```
+![Задание 5.9](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.9.png)
 * расширьте файловую систему на размер нового доступного пространства;
-
-
+```Bash
+sudo xfs_growfs /dev/vgnew/lvnew
+```
+![Задание 5.10](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.10.png)
 * сделайте скриншоты вывода комманд df -h, pvs, lvs, vgs.
 
-
+![Задание 5.11](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/04.%20Дисковые%20системы/05.11.png)
 
 ---
