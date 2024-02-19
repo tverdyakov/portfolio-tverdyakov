@@ -24,7 +24,7 @@
 #### *Ответ:*
 - Какие сетевые службы в ней разрешены?
 
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%201.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%201.png)
 
 - Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
 #### 1. vsftpd 2.3.4: [Backdoor Command Execution (Metasploit)](https://www.exploit-db.com/exploits/17491)
@@ -48,20 +48,20 @@
 ### Ответ:
 #### Режим SYN.
 Отправляется пакет с флагом SYN для установки соединения. Ответ SYN/ACK - порт открыт (После происходит сброс соединения RST). Ответ RST/ACK - порт закрыт.
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.1.png)
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.2.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.1.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.2.png)
 
 #### Режим FIN.
 Отправляется пакет с флагом FIN. Ответ RST/ACK - порт закрыт. Если ответа нет - порт открыт|фильтруется.
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.3.png)
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.4.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.3.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.4.png)
 
 #### Режим Xmas.
 Отправляется пакет с флагами FIN/PSH/URG. Ответ RST/ACK - порт закрыт. Если ответа нет - порт открыт|фильтруется.
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.5.png)
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.6.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.5.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.6.png)
 
 #### Режим UDP.
 Отправляет пустой UDP заголовок на каждый порт. Ответ ICMP ошибка о недостижимости порта (тип 3, код 3) - порт закрыт. Другие ICMP ошибки недостижимости - порт фильтруется. После нескольких попыток без ответа - порт  открыт|фильтруется. Ответ UDP - порт открыт.
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.7.png)
-![png](https://github.com/tverdyakov/13.01-hw/blob/main/screenshots/Задание%202.8.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.7.png)
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.8.png)
