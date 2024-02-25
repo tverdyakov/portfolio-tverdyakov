@@ -8,7 +8,7 @@
 
 *В качестве ответа  пришлите снимки экрана домашнего каталога пользователя с исходными и зашифрованными данными.*  
 
-#### *Ответ:*
+### Ответ:
 
 1. Добавьте пользователя cryptouser.
 ![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/02.%20Защита%20хоста/screenshots/Задание%201.1.png)
@@ -25,7 +25,7 @@
 
 *В качестве ответа пришлите снимки экрана с поэтапным выполнением задания.*
 
-#### *Ответ:*
+### Ответ:
 
 1. Установите поддержку **LUKS**.
 ![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/02.%20Защита%20хоста/screenshots/Задание%202.1.png)
