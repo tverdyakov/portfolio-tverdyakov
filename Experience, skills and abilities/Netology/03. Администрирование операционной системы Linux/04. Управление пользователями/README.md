@@ -8,7 +8,7 @@
 
 *Приведите ответ в виде снимков экрана.*
 
-#### *Ответ:*
+### Ответ:
 ```Bash
 sudo useradd -s /bin/bash -U student1
 cat /etc/passwd | grep student1
@@ -27,7 +27,7 @@ cat /etc/group | grep student2
 
 *Приведите ответ в виде снимков экрана.*
 
-#### *Ответ:*
+### Ответ:
 ```Bash
 sudo mkdir /tmp/stu
 sudo chgrp student2 /tmp/stu
@@ -47,7 +47,7 @@ ls -l /tmp | grep stu
 
 *Приведите ответ в свободной форме.*
 
-#### *Ответ:*
+### Ответ:
 *Для файла `/etc/passwd` установлен режим доступа:*
 
 `u – rw-; g – r--; o – r--.`
@@ -75,7 +75,7 @@ ls -l /etc/shadow
 
 *Приведите ответ в виде снимков экрана.*
 
-#### *Ответ:*
+### Ответ:
 ```Bash
 sudo usermod -g student1 student2
 sudo groupdel student2
@@ -92,7 +92,7 @@ cat /etc/group | grep student
 
 *Приведите ответ в виде снимков экрана.*
 
-#### *Ответ:*
+### Ответ:
 ```Bash
 sudo mkdir /tmp/not_for_student1
 sudo chgrp student1 /tmp/not_for_student1
