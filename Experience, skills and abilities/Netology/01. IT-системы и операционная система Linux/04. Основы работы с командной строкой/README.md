@@ -11,7 +11,7 @@
 
 *Сделайте скриншот консоли, где в строке ввода будет ваше ФИО.*
 
-#### *Ответ:*
+### Ответ:
 ![Задание 1](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/01.%20IT-системы%20и%20операционная%20система%20Linux/04.%20Основы%20работы%20с%20командной%20строкой/01.png)
 
 ---
@@ -27,7 +27,7 @@
 
 *Сделайте скриншот так, чтобы был виден вывод всех команд, вставьте в документ с ДЗ.*
 
-#### *Ответ:*
+### Ответ:
 ```bash
 echo "Tverdyakov Mikhail"
 date +"%Y-%m-%d - Lecture №4"
@@ -45,7 +45,7 @@ cat /etc/os-release
 
 *Сделайте скриншот, вставьте в документ с ДЗ.*
 
-#### *Ответ:*
+### Ответ:
 ```bash
 mkdir tverdyakov-lecture-4
 ls -la
@@ -67,7 +67,7 @@ ls -la
 
 *Пришлите получившуюся команду.*
 
-#### *Ответ:*
+### Ответ:
 ```bash
 mv tverdyakov-lecture-4 tverdyakov-lecture-4_24-02-12; cd tverdyakov-lecture-4_24-02-12; touch concept.1; cat /etc/os-release > concept.1; echo "Tverdyakov Mikhail" >> concept.1; echo "4" >> concept.1; head -n 10 concept.1 | tail -n 1
 ```
@@ -85,7 +85,7 @@ mv tverdyakov-lecture-4 tverdyakov-lecture-4_24-02-12; cd tverdyakov-lecture-4_2
 
 *Сделайте скриншот, вставьте в документ с ДЗ*
 
-#### *Ответ:*
+### Ответ:
 ```bash
 sudo apt update
 sudo apt upgrade
@@ -108,7 +108,7 @@ sudo dpkg --get-selections mc vim
 
 *Сделайте скриншот информации о системе, выведенной с помощью `neofetch`.*
 
-#### *Ответ:*
+### Ответ:
 ```bash
 echo "Tverdyakov Mikhail"
 date +"%Y-%m-%d - Lecture №4"
