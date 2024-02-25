@@ -9,7 +9,7 @@
 
 *Напишите ответ в свободной форме.*
 
-#### *Ответ:*
+### Ответ:
 Опишите плюсы работы с пакетным менеджером и репозиторием.
 * Как вы считаете, в чем основные достоинства такой организации ПО?
 
@@ -31,7 +31,7 @@
 
 *Напишите ответ в свободной форме.*
 
-#### *Ответ:*
+### Ответ:
 При подключении стороннего репозитория надо выполнить ряд определенных действий.
 * Каких?
 
@@ -78,7 +78,7 @@ sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > 
 
 *Ответ приведите в виде текста команды, которой вы это выполнили, а также приложите скриншот места расположения исполняемых файлов установленного ПО.*
 
-#### *Ответ:*
+### Ответ:
 ```Bash
 sudo apt depends htop
 ```
@@ -100,7 +100,7 @@ which htop
 
 *Приложите к ответу скриншот версии.*
 
-#### *Ответ:*
+### Ответ:
 ![](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/03.%20Администрирование%20операционной%20системы%20Linux/02.%20Управление%20пакетами/04.1.png)
 ![](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/03.%20Администрирование%20операционной%20системы%20Linux/02.%20Управление%20пакетами/04.2.png)
 ![](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/03.%20Администрирование%20операционной%20системы%20Linux/02.%20Управление%20пакетами/04.3.png)
@@ -119,7 +119,7 @@ which htop
 
 *Приложите скриншоты  с установленным пакетом `python-distutils`, с версией `Pip` и установленными модулями (должны быть видимы)*
 
-#### *Ответ:*
+### Ответ:
 ![](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/03.%20Администрирование%20операционной%20системы%20Linux/02.%20Управление%20пакетами/05.1.png)
 ![](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/03.%20Администрирование%20операционной%20системы%20Linux/02.%20Управление%20пакетами/05.2.png)
 
