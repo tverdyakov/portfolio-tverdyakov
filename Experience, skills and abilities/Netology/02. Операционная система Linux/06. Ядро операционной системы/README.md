@@ -7,7 +7,7 @@
 
 *Приведите ответ в свободной форме.*
 
-#### *Ответ:*
+### Ответ:
 *При системных вызовах и аппаратных прерываниях.*
 
 ---
@@ -18,7 +18,7 @@
 
 *В качестве ответа приложите скриншот вывода команды.*
 
-#### *Ответ:*
+### Ответ:
 ```Bash
 sudo modinfo libcrc32c
 ```
@@ -33,7 +33,7 @@ sudo modinfo libcrc32c
 
 *В качестве ответа напишите название системного вызова.*
 
-#### *Ответ:*
+### Ответ:
 `chdir`
 ![Задание 3](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/06.%20Ядро%20операционной%20системы/03.png)
 
@@ -99,7 +99,7 @@ insmod path/to/module.ko
 
 *В качестве ответа приложите скриншот вывода установки модуля в `dmesg`.*
 
-#### *Ответ:*
+### Ответ:
 ![Задание 4](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/06.%20Ядро%20операционной%20системы/04.1.png)
 ![Задание 4](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/02.%20Операционная%20система%20Linux/06.%20Ядро%20операционной%20системы/04.2.png)
 
