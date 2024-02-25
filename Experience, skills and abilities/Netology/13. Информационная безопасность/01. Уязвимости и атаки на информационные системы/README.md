@@ -21,7 +21,7 @@
   
 *Приведите ответ в свободной форме.*  
 
-#### *Ответ:*
+### Ответ:
 - Какие сетевые службы в ней разрешены?
 
 ![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%201.png)
@@ -32,6 +32,7 @@
 #### 3. PostgreSQL 8.3.6: [Conversion Encoding Remote Denial of Service](https://www.exploit-db.com/exploits/32849)
 #### 4. PostgreSQL 8.3.6: [Low Cost Function Information Disclosure](https://www.exploit-db.com/exploits/32847)
 
+---
 
 ### Задание 2
 
@@ -65,3 +66,5 @@
 Отправляет пустой UDP заголовок на каждый порт. Ответ ICMP ошибка о недостижимости порта (тип 3, код 3) - порт закрыт. Другие ICMP ошибки недостижимости - порт фильтруется. После нескольких попыток без ответа - порт  открыт|фильтруется. Ответ UDP - порт открыт.
 ![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.7.png)
 ![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/13.%20Информационная%20безопасность/01.%20Уязвимости%20и%20атаки%20на%20информационные%20системы/screenshots/Задание%202.8.png)
+
+---
