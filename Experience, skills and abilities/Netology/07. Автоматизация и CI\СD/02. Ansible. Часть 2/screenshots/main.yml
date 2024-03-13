@@ -1,0 +1,22 @@
+---
+- name: "Install Apache"
+  apt:
+    name: "apache2"
+    state: latest
+
+- name: "Change index.html"
+  template:
+    src: "index.j2"
+    dest: /var/www/html/index.html
+
+- name: "Start and autorun Apache"
+  systemd:
+    name: "apache2"
+    enabled: True
+    state: started
+
+- name: "Status 200"
+  ansible.builtin.uri:
+    url: "{{ ip }}"
+  vars:
+    ip: "http://{{ ansible_facts.all_ipv4_addresses [1] }}/"

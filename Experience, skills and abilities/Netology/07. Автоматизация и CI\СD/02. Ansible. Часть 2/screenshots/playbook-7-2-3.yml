@@ -1,0 +1,8 @@
+---
+- name: "Install Apache --> Change index.html --> Start and autorun Apache --> Status 200"
+  hosts: "all"
+  become: True
+
+  gather_facts: True
+  roles:
+  - 7-2-3
