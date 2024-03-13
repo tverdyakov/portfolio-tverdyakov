@@ -1,0 +1,16 @@
+---
+- name: "new hello motd"
+  hosts: "all"
+  become: true
+
+  vars:
+    new_hello_motd: "Have a nice day, System Administrator!"
+
+  tasks:
+  - name: "new motd"
+    copy:
+      content:
+      - "IP ADDRESS - {{ ansible_facts.all_ipv4_addresses }}"
+      - "HOSTNAME - {{ ansible_facts.hostname }}"
+      - "{{ new_hello_motd }}"
+      dest: /etc/motd

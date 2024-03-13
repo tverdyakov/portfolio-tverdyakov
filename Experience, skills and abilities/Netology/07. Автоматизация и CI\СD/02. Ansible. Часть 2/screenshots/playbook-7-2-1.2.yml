@@ -1,0 +1,16 @@
+---
+- name: "install Tuned --> start and autorun Tuned"
+  hosts: "all"
+  become: true
+
+  tasks:
+  - name: "1/2 install Tuned"
+    apt:
+      name: "tuned"
+      state: latest
+
+  - name: "2/2 start and autorun Tuned"
+    systemd:
+      name: "tuned"
+      enabled: True
+      state: started
