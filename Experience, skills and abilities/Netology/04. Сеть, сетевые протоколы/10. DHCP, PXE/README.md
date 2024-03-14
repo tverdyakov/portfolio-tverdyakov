@@ -58,4 +58,12 @@ DHCP работает на 67-ом (от клиента к серверу) и 68
 
 ### Ответ:
 
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/04.%20Сеть%2C%20сетевые%20протоколы/10.%20DHCP%2C%20PXE/01.1.png)
+
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/04.%20Сеть%2C%20сетевые%20протоколы/10.%20DHCP%2C%20PXE/01.2.png)
+
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/04.%20Сеть%2C%20сетевые%20протоколы/10.%20DHCP%2C%20PXE/01.3.png)
+
+![png](https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/Netology/04.%20Сеть%2C%20сетевые%20протоколы/10.%20DHCP%2C%20PXE/01.4.png)
+
 ---
