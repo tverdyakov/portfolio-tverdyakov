@@ -26,7 +26,7 @@
   <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/14%20Jenkins.png" title="Jenkins" alt="Jenkins" width="60" height="60"/>&nbsp;
   <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/15%20Zabbix.png" title="Zabbix" alt="Zabbix" width="60" height="60"/>&nbsp;
   <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/16%20Prometheus.png" title="Prometheus" alt="Prometheus" width=" 60" height="60"/>&nbsp;
-  <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/17%20Grafana.png" title="Grafana" alt="Grafana" width="60" height="60"/>&nbsp;
+  <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/17%20Grafana.jpg" title="Grafana" alt="Grafana" width="60" height="60"/>&nbsp;
   <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/18%20Redis.png" title="Redis" alt="Redis" width="60" height="60"/>&nbsp;
   <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/19%20Memcached.png" title="Memcached" alt="Memcached" width="60" height="60"/>&nbsp;
   <img src="https://github.com/tverdyakov/portfolio-tverdyakov/blob/main/Experience%2C%20skills%20and%20abilities/icons/20%20Elastic.png" title="Elastic" alt="Elastic" width="60" height="60"/>&nbsp;
